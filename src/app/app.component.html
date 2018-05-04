@@ -1,10 +1,7 @@
-<!-- Proper application component -->
-<div class = "appComponent">
-  
-  <!-- The whole background should be leaflet map component -->
-  <app-map></app-map>
+<!-- Global content (e.g. menu) goes here -->
+<!-- Everything else goes into specific pages -->
 
+<div style =  "background-color: orange;">Hi, i'm a global block. I will always be displayed.</div>
 
-</div>
-
-
+<!-- Currently routed page is displayed here (like ng-view) -->
+<router-outlet></router-outlet>

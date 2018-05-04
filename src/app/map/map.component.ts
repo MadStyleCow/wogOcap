@@ -13,18 +13,18 @@ import { LatLng, TileLayer } from 'leaflet';
   styleUrls: ['./map.component.css']      // CSS style URI
 })
 
-// A class describing t
+// A class describing the component
 export class MapComponent implements OnInit {
   // Map settings
   mapSettings = {
     layers: [
-      new TileLayer('http://ocap.wogames.info/images/maps/chernarus/{z}/{x}/{y}.png', {
+      new TileLayer('http://{s}.wogames.info/images/maps/takistan/{z}/{x}/{y}.png', {
         minZoom: 1,
         maxNativeZoom: 6, // Max zoom, for which the tiles will be loaded (OCAP only has up to zoom 6)
         maxZoom: 9, // However allow the user to zoom closer, so that he can see stuff more closely.
         noWrap: true, // Disable word duplication
         subdomains: [
-          'tile'
+          'ocap'
         ]
       })
     ],
