@@ -1,0 +1,22 @@
+<div class = "container">
+
+  <!-- Internal card -->
+  <div class = "card">
+    <div class = "card-body">
+      <!-- Filters -->
+      <div class = "row">
+        <div class = "col-lg-12 filterContainer">
+          <app-search-filter></app-search-filter>
+        </div>
+      </div>
+
+      <!-- Resut list -->
+      <div class = "row">
+        <div class = "col-lg-12 resultContainer">
+          <app-result-list [replays] = "replays"> 
+          </app-result-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,22 +1,18 @@
+// Import modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
+// Import app pages
 import { ReplayComponent } from './pages/replay/replay.component';
-import { ReplayListComponent } from './pages/replay-list/replay-list.component';
+import { HomeComponent } from './pages/home/home.component';
 
 // Define routes
 const routes: Routes = [
-  // Default redirect
+  // Home / replay index
   {
     path: '',
-    redirectTo: '/replays',
-    pathMatch: 'full'
-  },
-  // Replay list
-  {
-    path: 'replays',
-    component: ReplayListComponent
+    component: HomeComponent
   },
   // Specific replay
   {

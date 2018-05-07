@@ -1,0 +1,36 @@
+<div class = "row">
+  <div class = "col-lg-12">
+
+    <!-- Card -->
+    <div class = "card">
+      <!-- Card header -->
+      <div class = "card-header">
+        <!-- These controls immitate tabs, while not really being tabs. They act more like type filters. -->
+      </div>
+
+      <!-- Card content -->
+      <div class = "card-body">
+        <table class = "table">
+          <!-- Header -->
+          <thead class = "thead-dark">
+            <th scope = "col">Date</th>
+            <th scope = "col">Mission</th>
+            <th scope = "col">World</th>
+            <th scope = "col">Duration</th>
+          </thead>
+
+          <!-- Body -->
+          <tbody>
+            <tr *ngFor = "let replay of replays">
+              <td>{{ replay.date | date: 'yyyy-MM-dd' }}</td>
+              <td>{{ replay.mission }}</td>
+              <td>{{ replay.world }}</td>
+              <td>{{ replay.duration }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
