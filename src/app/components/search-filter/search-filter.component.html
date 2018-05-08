@@ -1,30 +1,29 @@
 <div class = "row">
 
   <!-- Name input -->
-  <div class = "col-lg-4 form-group">
-    <label class = "fieldLabel" i18n = "What the hell is this@@missionNameLabel">Name</label>
+  <div class = "col-lg-3 form-group">
+    <label class = "fieldLabel" translate >components.searchFilter.name</label>
 
     <input class = "form-control"
       type = "text"
-      placeholder = "Mission name"/>
+      placeholder = "{{ 'components.searchFilter.name' | translate }}"/>
   </div>
   
   <!-- Date from -->
   <div class = "col-lg-3 form-group">
-    <label calss = "fieldLabel" i18n>From</label>
+    <label class = "fieldLabel" translate>components.searchFilter.dateFrom</label>
 
   </div>
 
   <!-- Date to-->
   <div class = "col-lg-3 form-group">
-    <label calss = "fieldLabel" i18n>Until</label>
+    <label class = "fieldLabel" translate >components.searchFilter.dateTo</label>
   </div>
 
   <!-- Search button-->
-  <div class = "col-lg-2 form-group">
-    <button class = "btn btn-block btn-primary">
-      Find
+  <div class = "col-lg-3 form-group">
+    <button mat-raised-button class = "mat-raised-button">
+      {{ 'components.searchFilter.searchButton' | translate }}
     </button>
   </div>
-
 </div>

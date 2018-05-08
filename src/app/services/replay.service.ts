@@ -1,12 +1,13 @@
+// Import angular modules
 import { Injectable } from '@angular/core/';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Observable } from 'rxjs/observable';
-import { of as observableOf } from 'rxjs/observable/of';
-import { catchError } from 'rxjs/operators/catchError';
-import { map } from 'rxjs/operators/map';
-import { tap } from 'rxjs/operators/tap';
+// Import RxJS classes
+import { Observable } from 'rxjs';
+import { of as observableOf } from 'rxjs';
+import { catchError ,  map ,  tap } from 'rxjs/operators';
 
+// Import classes
 import { Replay } from './../classes/replay';
 import { UtilityService } from './utility.service';
 import { ServiceConfiguration } from '../../environments/environment';

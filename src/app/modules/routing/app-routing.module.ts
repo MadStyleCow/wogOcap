@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 // Import app pages
-import { ReplayComponent } from './pages/replay/replay.component';
-import { HomeComponent } from './pages/home/home.component';
+import { ReplayComponent } from './../../pages/replay/replay.component';
+import { HomeComponent } from './../../pages/home/home.component';
 
 // Define routes
 const routes: Routes = [

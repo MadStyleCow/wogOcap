@@ -1,3 +1,25 @@
 {
-    
+    "pipes" : {
+        "duration" : {
+            "hours" : "{{hours}} ч {{minutes}} мин",
+            "minutes" : "{{minutes}} мин"
+        }
+    },
+
+    "pages" : {
+
+    },
+
+    "components" : {
+        "searchFilter": {
+        "name" : "Название",
+        "dateFrom" : "Начиная с",
+        "dateTo" : "Заканчивая",
+        "searchButton" : "Найти"
+        },
+        "resultList": {
+
+        }
+    }
+  
 }
